@@ -14,8 +14,14 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="utf-8" />
-    <title>TinDog</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <title>TinDog</title>
   </head>
 
   <body>
@@ -37,20 +43,6 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#"
@@ -69,13 +61,23 @@
         <!-- Title -->
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-white">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+
+            <button type="button" class="btn btn-dark btn-lg mr-2 mt-4">
+              <i class="fab fa-apple"></i> Download
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg mt-4">
+              <i class="fab fa-google-play"></i>
+              Download
+            </button>
           </div>
-          <div class="col-lg-6">
-            <img src="images/iphone6.png" alt="iphone-mockup" />
+          <div class="col-lg-6 pl">
+            <img
+              class="title-img"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
           </div>
         </div>
       </div>
@@ -84,14 +86,25 @@
     <!-- Features -->
 
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <i class="fas fa-check-circle"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+          <div class="col-lg-4">
+            <i class="fas fa-bullseye"></i>
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+          <div class="col-lg-4">
+            <i class="fas fa-heart"></i>
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
